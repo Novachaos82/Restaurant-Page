@@ -8,12 +8,12 @@ function itemsLoader() {
     "Happiness is Homemade!"
   );
   const item2 = itemContentAdd(
-    "../dist/images/pizza.jpg",
+    "./images/pizza.jpg",
     "Pizza",
     "high-quality ingredients"
   );
   const item3 = itemContentAdd(
-    "../dist/images/ramen.jpg",
+    "./images/ramen.jpg",
     "Ramen",
     "A stir-fry egg noodle dish packed with fresh vegetables"
   );
@@ -23,12 +23,12 @@ function itemsLoader() {
     "Happiness is Homemade!"
   );
   const item5 = itemContentAdd(
-    "../dist/images/pizza.jpg",
+    "./images/pizza.jpg",
     "Pizza",
     "high-quality ingredients"
   );
   const item6 = itemContentAdd(
-    "../dist/images/ramen.jpg",
+    "./images/ramen.jpg",
     "Ramen",
     "A stir-fry egg noodle dish packed with fresh vegetables"
   );
@@ -38,7 +38,7 @@ function itemsLoader() {
     "Happiness is Homemade!"
   );
   const item8 = itemContentAdd(
-    "../dist/images/pizza.jpg",
+    "./images/pizza.jpg",
     "Pizza",
     "high-quality ingredients"
   );
