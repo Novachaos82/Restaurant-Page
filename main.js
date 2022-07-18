@@ -1,1 +1,1 @@
-console.log("this is index.js nice");
+console.log("nohthing, it just works");
