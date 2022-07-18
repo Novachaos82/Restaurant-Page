@@ -74,7 +74,6 @@ ul {
   text-align: center;
 }
 
-/*main-content-hompage*/
 .main-content {
   /*height: 80vh;*/
   padding: 2rem;
@@ -83,11 +82,12 @@ ul {
   justify-content: center;
 }
 
+/*main-content-hompage*/
 .box {
   margin-top: 15vh;
   margin-bottom: 10vh;
   background: rgba(0, 0, 0, 0.6);
-  width: 30vw;
+  width: 40vw;
   height: 50vh;
   display: flex;
   align-items: center;
@@ -106,4 +106,58 @@ ul {
   width: 225px;
   object-fit: cover;
   margin-bottom: 2rem;
+}
+
+/*main-content-menu*/
+
+.menu {
+  /*height: 100vh;*/
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  padding: 2rem;
+  width: 40vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.menu .items {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.6);
+  align-items: center;
+  justify-content: center;
+  /*width: 200px;*/
+  padding: 2rem 1rem;
+  gap: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Righteous", cursive;
+}
+.menu .items:hover {
+  cursor: pointer;
+}
+
+.menu img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.contact-box {
+  /*height: 100vh;*/
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+  padding: 2rem;
+  width: 40vw;
+  background: rgba(0, 0, 0, 0.6);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
 }
