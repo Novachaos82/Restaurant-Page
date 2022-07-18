@@ -1,3 +1,5 @@
+import { homeLoader } from "./home";
+
 function header() {
   const navbar = document.createElement("div");
   navbar.classList.add("navbar");
@@ -59,4 +61,10 @@ const footerLoader = function () {
   const contentDiv = document.getElementById("content");
   contentDiv.appendChild(footer());
 };
-export { headerLoader, footerLoader };
+
+const defaultPageLoad = function () {
+  headerLoader();
+  homeLoader();
+  footerLoader();
+};
+export { headerLoader, footerLoader, defaultPageLoad };

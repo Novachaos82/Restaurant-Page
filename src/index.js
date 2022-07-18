@@ -1,20 +1,37 @@
-import { headerLoader, footerLoader } from "./header&footer";
+import { headerLoader, footerLoader, defaultPageLoad } from "./header&footer";
 import { homeLoader } from "./home";
 import { menuLoader } from "./menu";
 import { contactLoader } from "./contact";
 
-headerLoader();
+const content = document.getElementById("content");
+
+defaultPageLoad();
 function switching() {
   document.querySelector(".home-btn").addEventListener("click", () => {
+    content.innerHTML = "";
+    headerLoader();
     homeLoader();
-    switching();
+    //switching();
     footerLoader();
+    switching();
   });
 
   document.querySelector(".menu-btn").addEventListener("click", () => {
+    content.innerHTML = "";
+    headerLoader();
     menuLoader();
-    switching();
+    //switching();
     footerLoader();
+    switching();
+  });
+
+  document.querySelector(".contact-btn").addEventListener("click", () => {
+    content.innerHTML = "";
+    headerLoader();
+    contactLoader();
+    //switching();
+    footerLoader();
+    switching();
   });
 }
 
