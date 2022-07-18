@@ -57,7 +57,6 @@ ul {
   display: flex;
 
   transition: all 0.3s linear;
-  cursor: pointer;
 }
 
 .buttons-ul button {
@@ -65,6 +64,7 @@ ul {
   color: white;
   border: transparent;
   font-size: 1.5rem;
+  cursor: pointer;
 }
 
 .buttons-ul li:hover {
@@ -74,14 +74,15 @@ ul {
 
 /*footer*/
 .footer {
-  position: absolute;
-  /*bottom: 0;*/
+  bottom: 0;
+  position: relative;
   /*height: 8vh;*/
   background: rgba(0, 0, 0, 0.9);
   width: 100vw;
   padding: 1rem;
   font-size: 18px;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-content {
@@ -94,9 +95,9 @@ ul {
 
 /*main-content-hompage*/
 .box {
-  margin-top: 15vh;
-  margin-bottom: 10vh;
-  background: rgba(0, 0, 0, 0.6);
+  margin-top: 5vh;
+  margin-bottom: 13vh;
+  background: rgba(0, 0, 0, 0.7);
   width: 40vw;
   height: 50vh;
   display: flex;
@@ -123,11 +124,11 @@ ul {
 
 .menu {
   /*height: 100vh;*/
-  margin-top: 15vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   padding: 2rem;
   width: 40vw;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
@@ -148,9 +149,11 @@ ul {
   text-align: center;
   font-size: 18px;
   font-family: "Righteous", cursive;
+  transition: all 0.3s linear;
 }
 .menu .items:hover {
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.8);
 }
 
 .menu img {
@@ -161,11 +164,11 @@ ul {
 
 .contact-box {
   /*height: 100vh;*/
-  margin-top: 15vh;
+  margin-top: 5vh;
   margin-bottom: 10vh;
   padding: 2rem;
   width: 40vw;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7);
   display: grid;
   align-items: center;
   justify-content: center;
