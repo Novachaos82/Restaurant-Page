@@ -23,7 +23,7 @@ function paragraphEditor(p) {
   return paragraphEle;
 }
 
-function main() {
+function mainloader() {
   const mainContent = document.createElement("div");
   mainContent.classList.add("main-content");
   mainContent.appendChild(homeElements());
@@ -31,4 +31,10 @@ function main() {
   return mainContent;
 }
 
-export { main };
+const homeLoader = function () {
+  const contentDiv = document.getElementById("content");
+
+  contentDiv.appendChild(mainloader());
+};
+
+export { homeLoader };

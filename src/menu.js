@@ -1,4 +1,4 @@
-function itesmsLoader() {
+function itemsLoader() {
   const menu = document.createElement("div");
   menu.classList.add("menu");
 
@@ -80,8 +80,13 @@ function menuContentLoader() {
   const mainContent = document.createElement("div");
   mainContent.classList.add("main-content");
 
-  mainContent.appendChild(itesmsLoader());
+  mainContent.appendChild(itemsLoader());
   return mainContent;
 }
 
-export { menuContentLoader };
+const menuLoader = function () {
+  const contentDiv = document.getElementById("content");
+  contentDiv.appendChild(menuContentLoader());
+};
+
+export { menuLoader };

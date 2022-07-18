@@ -50,4 +50,13 @@ function footer() {
   return footerContent;
 }
 
-export { header, footer };
+const headerLoader = function () {
+  const contentDiv = document.getElementById("content");
+  contentDiv.appendChild(header());
+};
+
+const footerLoader = function () {
+  const contentDiv = document.getElementById("content");
+  contentDiv.appendChild(footer());
+};
+export { headerLoader, footerLoader };

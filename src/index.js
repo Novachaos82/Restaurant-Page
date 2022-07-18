@@ -1,18 +1,21 @@
-import { main } from "./home";
-import { menuContentLoader } from "./menu";
-//const content = document.getElementById("content");
-//content.appendChild(homeElements());
-import { header, footer } from "./header&footer";
+import { headerLoader, footerLoader } from "./header&footer";
+import { homeLoader } from "./home";
+import { menuLoader } from "./menu";
+import { contactLoader } from "./contact";
 
-const content = document.getElementById("content");
+headerLoader();
+function switching() {
+  document.querySelector(".home-btn").addEventListener("click", () => {
+    homeLoader();
+    switching();
+    footerLoader();
+  });
 
-content.appendChild(header());
+  document.querySelector(".menu-btn").addEventListener("click", () => {
+    menuLoader();
+    switching();
+    footerLoader();
+  });
+}
 
-const homeBtn = document.querySelector(".home-btn");
-
-//homeBtn.addEventListener("click", () => {
-//content.appendChild(main());
-content.appendChild(menuContentLoader());
-
-content.appendChild(footer());
-//});
+switching();
