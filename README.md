@@ -10,3 +10,5 @@ Restaurant Page project from The Odin Project.
 - Css
 - JavaScript
 - Webpack
+
+[Live Preview](https://novachaos82.github.io/Restaurant-Page/)
