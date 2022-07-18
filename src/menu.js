@@ -3,44 +3,44 @@ function itemsLoader() {
   menu.classList.add("menu");
 
   const item1 = itemContentAdd(
-    "./images/pizza.jpg",
+    "./images/burger.jpg",
     "Burger",
-    "something something"
+    "Happiness is Homemade!"
   );
   const item2 = itemContentAdd(
     "../dist/images/pizza.jpg",
-    "Burger",
-    "something something"
+    "Pizza",
+    "high-quality ingredients"
   );
   const item3 = itemContentAdd(
-    "../dist/images/pizza.jpg",
-    "Burger",
-    "something something"
+    "../dist/images/ramen.jpg",
+    "Ramen",
+    "A stir-fry egg noodle dish packed with fresh vegetables"
   );
   const item4 = itemContentAdd(
-    "../dist/images/pizza.jpg",
+    "./images/burger.jpg",
     "Burger",
-    "something something"
+    "Happiness is Homemade!"
   );
   const item5 = itemContentAdd(
     "../dist/images/pizza.jpg",
-    "Burger",
-    "something something"
+    "Pizza",
+    "high-quality ingredients"
   );
   const item6 = itemContentAdd(
-    "../dist/images/pizza.jpg",
-    "Burger",
-    "something something"
+    "../dist/images/ramen.jpg",
+    "Ramen",
+    "A stir-fry egg noodle dish packed with fresh vegetables"
   );
   const item7 = itemContentAdd(
-    "../dist/images/pizza.jpg",
+    "./images/burger.jpg",
     "Burger",
-    "something something"
+    "Happiness is Homemade!"
   );
   const item8 = itemContentAdd(
     "../dist/images/pizza.jpg",
-    "Burger",
-    "something something"
+    "Pizza",
+    "high-quality ingredients"
   );
 
   menu.appendChild(item1);

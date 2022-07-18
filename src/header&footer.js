@@ -18,19 +18,19 @@ function header() {
   const homeBtn = document.createElement("button");
   homeBtn.classList.add("home-btn");
   list1.appendChild(homeBtn);
-  homeBtn.textContent = "home";
+  homeBtn.textContent = "Home";
 
   const list2 = document.createElement("li");
   const menuBtn = document.createElement("button");
   menuBtn.classList.add("menu-btn");
   list2.appendChild(menuBtn);
-  menuBtn.textContent = "menu";
+  menuBtn.textContent = "Menu";
 
   const list3 = document.createElement("li");
   const contactBtn = document.createElement("button");
   contactBtn.classList.add("contact-btn");
   list3.appendChild(contactBtn);
-  contactBtn.textContent = "contact";
+  contactBtn.textContent = "Contact";
 
   unorderList.appendChild(list1);
   unorderList.appendChild(list2);
@@ -47,7 +47,7 @@ function header() {
 function footer() {
   const footerContent = document.createElement("div");
   footerContent.classList.add("footer");
-  footerContent.innerHTML = `Copyright &copy Novachoas`;
+  footerContent.innerHTML = `Copyright &copy 2022 Bhavesh   <a href="https://github.com/Novachaos82"><i class="fa-brands fa-github"></i></a>`;
 
   return footerContent;
 }
