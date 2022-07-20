@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
 }
 
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+}
+
 a {
   text-decoration: none;
   color: white;
@@ -24,15 +31,16 @@ ul {
   /*display: flex;*/
   background: rgba(0, 0, 0, 0.9);
   width: 100vw;
-  height: 20vh;
+  /*height: 20vh;*/
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2rem;
   font-size: 2.5rem;
   font-family: "Rubik Moonrocks", cursive;
   flex-direction: column;
-  position: sticky;
+  gap: 50px;
+  /*position: sticky;*/
 }
 
 @keyframes fadeIn {
@@ -45,6 +53,7 @@ ul {
 }
 
 .buttons-ul {
+  /*margin-top: 50px;*/
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
   justify-content: space-between;
@@ -71,26 +80,6 @@ ul {
   /*border-bottom: solid 2px white;*/
   transform: translateY(-8px);
 }
-#content {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/*footer*/
-.footer {
-  /*position: absolute;*/
-  bottom: 0;
-  /*position: absolute;*/
-  /*height: 8vh;*/
-  background: rgba(0, 0, 0, 0.9);
-  width: 100vw;
-  padding: 1rem;
-  font-size: 18px;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  justify-content: flex-end;
-}
 
 .main-content {
   /*height: 80vh;*/
@@ -104,7 +93,7 @@ ul {
 /*main-content-hompage*/
 .box {
   margin-top: 5vh;
-  margin-bottom: 13vh;
+  /*margin-bottom: 13vh;*/
   background: rgba(0, 0, 0, 0.7);
   width: 40vw;
   height: fit-content;
@@ -173,7 +162,7 @@ ul {
 .contact-box {
   /*height: 100vh;*/
   margin-top: 5vh;
-  margin-bottom: 10vh;
+  /*margin-bottom: 10vh;*/
   padding: 2rem;
   width: 40vw;
   background: rgba(0, 0, 0, 0.7);
@@ -184,4 +173,17 @@ ul {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
   animation: fadeIn 0.7s;
+}
+
+/*footer*/
+.footer {
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  padding: 1rem;
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
 }
