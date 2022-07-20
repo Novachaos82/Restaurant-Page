@@ -71,11 +71,17 @@ ul {
   /*border-bottom: solid 2px white;*/
   transform: translateY(-8px);
 }
+#content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 /*footer*/
 .footer {
+  /*position: absolute;*/
   bottom: 0;
-  position: relative;
+  /*position: absolute;*/
   /*height: 8vh;*/
   background: rgba(0, 0, 0, 0.9);
   width: 100vw;
@@ -83,6 +89,7 @@ ul {
   font-size: 18px;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  justify-content: flex-end;
 }
 
 .main-content {
@@ -91,6 +98,7 @@ ul {
   display: grid;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 /*main-content-hompage*/
@@ -99,7 +107,7 @@ ul {
   margin-bottom: 13vh;
   background: rgba(0, 0, 0, 0.7);
   width: 40vw;
-  height: 50vh;
+  height: fit-content;
   display: flex;
   align-items: center;
   /*justify-content: center;*/
